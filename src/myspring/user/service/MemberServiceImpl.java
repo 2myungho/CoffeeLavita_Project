@@ -18,6 +18,11 @@ public class MemberServiceImpl implements MemberService {
 		
 	}
 
+	@Override
+	public MemberVO login(MemberVO user) {
+		return memberdao.login(user);
+	}
+
 
 
 }

@@ -4,12 +4,19 @@
 <mapper namespace="myspring.user.dao.mapper.MemberMapper">
 <!-- <mapper namespace="MemberNS"> -->
 
-
+	<!-- 회원가입 -->
 	<insert id="insertUser" parameterType="Member">
 		insert into member
-		values(#{mem_id},#{mem_pw})
+		values(#{mem_id},#{mem_pw},#{name})
 	</insert>
-
+	
+	<!-- 로그인 -->
+	<select id="login" resultType="Member">
+		select mem_id, mem_pw, name
+		from member
+		where mem_id = #{mem_id}
+		and mem_pw = #{mem_pw}
+	</select>
 	
 </mapper>
  

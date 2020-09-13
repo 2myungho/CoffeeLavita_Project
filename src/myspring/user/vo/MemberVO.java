@@ -4,7 +4,14 @@ public class MemberVO {
 	
 	private String mem_id;
 	private String mem_pw;
+	private String name;
 	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getMem_id() {
 		return mem_id;
 	}
@@ -20,7 +27,7 @@ public class MemberVO {
 	
 	@Override
 	public String toString() {
-		return "MemberVO [mem_id=" + mem_id + ", mem_pw=" + mem_pw + "]";
+		return "MemberVO [mem_id=" + mem_id + ", mem_pw=" + mem_pw + ", name=" + name + "]";
 	}
 	
 }

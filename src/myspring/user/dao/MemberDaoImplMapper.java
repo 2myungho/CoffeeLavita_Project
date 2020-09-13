@@ -13,8 +13,14 @@ public class MemberDaoImplMapper implements MemberDao {
 
 	@Override
 	public void insert(MemberVO vo) {
-		System.out.println(vo);
+		System.out.println("여기는 dao입니당 : " + vo);
 		memberMapper.insertUser(vo);
+	}
+
+	@Override
+	public MemberVO login(MemberVO vo) {
+		System.out.println("여기는 dao입니당 : " + vo);
+		return memberMapper.login(vo);
 	}
 	
 }

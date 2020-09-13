@@ -16,6 +16,7 @@ public interface MemberMapper {
 //	MemberVO selectUserById(String id);
 //	List<MemberVO> selectUserList();
 	void insertUser(MemberVO memberVO);
+	MemberVO login(MemberVO memberVO);
 //	void updateUser(MemberVO memberVO);
 //	void deleteUser(String id);
 }

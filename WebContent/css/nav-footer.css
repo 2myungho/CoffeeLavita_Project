@@ -64,7 +64,6 @@ textarea{resize: none;}
 
 	.header-text{
 	  float:right;
-	  width:500px;
 	  height:60px;
 	  line-height:60px;
 	}
@@ -133,6 +132,7 @@ textarea{resize: none;}
 		width:250px;
 		border-radius:0 0 10px 10px;
 	}
+	.memberName{font-weight: bold;}
 	.nav-bar>li:hover .nav-subbar{display: block;}
 	.nav-bar>li:hover .nav-subbar{background:#044406;}
 	/*.nav-bar>li:hover .nav-subbar>li>a{color:#ffffff;}*/
@@ -260,6 +260,7 @@ textarea{resize: none;}
 	  height:80px;
 	  margin:0 auto;
 	}
+	.myname{display:none;}
 	.header-text>li{
 		float:left;
 		line-height:80px;
@@ -498,6 +499,7 @@ textarea{resize: none;}
 	  height:60px;
 	  margin-left:14%;
 	}
+	.myname{display:none;}
 	.header-text>li{
 		float:left;
 		line-height:60px;
