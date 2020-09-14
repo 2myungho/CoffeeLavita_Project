@@ -30,14 +30,15 @@ public class UserController {
 		System.out.println("==> UserController 기본 생성자 호출됨!!");
 	}
 	 
-	 @RequestMapping(value = "/log.do")
-	 public void register(MemberVO user) {
+	 @RequestMapping(value = "/register.do")
+	 public String register(MemberVO user) {
 		 System.out.println(user);
 		 service.insertUser(user);
 		 System.out.println("회원가입 완료");
+		 return "log";
 	 }
 	 
-	 @RequestMapping(value = "/index",method = RequestMethod.POST)
+	 @RequestMapping(value = "/log.do",method = RequestMethod.POST)
 	 public String login(MemberVO vo, HttpServletRequest req, RedirectAttributes rttr) {
 		 System.out.println("컨트롤의 vo입니당. : " + vo);
 		 
@@ -55,6 +56,7 @@ public class UserController {
 	 }
 	 
 	 @RequestMapping(value = "/logout.do", method = RequestMethod.GET)
+	 //로그아웃의 href가 logdout.do이면 바로 로그아웃이 된다.
 		public String logout(HttpSession session){
 		 System.out.println("로그아웃이 됩니다.");
 			session.invalidate();

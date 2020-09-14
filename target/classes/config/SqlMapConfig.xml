@@ -11,6 +11,7 @@
     
 	<typeAliases>
 		<typeAlias alias="Member" type="myspring.user.vo.MemberVO" />
+		<typeAlias alias="Board" type="myspring.user.vo.BoardVO" />
 	</typeAliases>
 
 </configuration>

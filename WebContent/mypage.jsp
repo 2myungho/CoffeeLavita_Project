@@ -21,7 +21,7 @@
           </h1>
 
           <ul class="header-text">
-            <li>
+            <li class="myname">
 				<c:if test="${member != null}">
 					<p><span class="memberName">${member.name}</span>님 안녕하세요.</p>
 				</c:if>
@@ -31,17 +31,17 @@
             	<c:if test="${member == null}"> <a href="log.jsp">로그인</a> </c:if>
             	<c:if test="${member != null}"><a href="logout.jsp">로그아웃</a></c:if>
             </li>
-            <li><a href="mypage.jsp">마이페이지</a></li>
+            <li>
+            	<c:if test="${member == null}"><a href="" class="alert">마이페이지</a></c:if>
+            	<c:if test="${member != null}"><a href="mypage.jsp">마이페이지</a></c:if>
             <li><a href="claim.jsp">고객센터</a></li>
             <li>
-              <form>
                 <select class="length">
                   <option selected>KOREA</option>
                   <option>English</option>
                   <option>China</option>
                   <option>Japan</option>
               </select>
-            </form>
             </li>
           </ul>
 		 <div class="last-gnb">
@@ -125,7 +125,10 @@
 				<div class="location"><a href="main.jsp">메인></a><a href="mypage.jsp">마이페이지</a></div>
 				<div class="mypage-left">
 					<div class="mypage-left-fristbox">
-						<h3>이명호님의 LAVITA 포인트는 920P입니다.</h3>
+					
+					<c:if test="${member != null}">
+						<h3>${member.name}님의 LAVITA 포인트는 920P입니다.</h3>
+					</c:if>
 					</div>
 					
 					<div class="mypage-secondbox">
@@ -235,7 +238,14 @@
       </div>
 
     </div>
-
+	
+	<script>
+	$(document).ready(function(){
+		$(".alert").click(function(){
+			alert("로그인이 필요한 서비스입니다.")
+		})
+	})
+	</script>
 
   </body>
 </html>

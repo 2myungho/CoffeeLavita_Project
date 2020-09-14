@@ -32,7 +32,7 @@
             	<c:if test="${member != null}"><a href="logout.jsp">로그아웃</a></c:if>
             </li>
             <li>
-            	<c:if test="${member == null}"><a href="">마이페이지</a></c:if>
+            	<c:if test="${member == null}"><a href="" class="alert">마이페이지</a></c:if>
             	<c:if test="${member != null}"><a href="mypage.jsp">마이페이지</a></c:if>
             <li><a href="claim.jsp">고객센터</a></li>
             <li>
@@ -301,6 +301,11 @@
 	 });
 	}
 	/*******************************************/
+	$(document).ready(function(){
+	$(".alert").click(function(){
+		alert("로그인이 필요한 서비스입니다.")
+	})
+})
 
 </script>
 </body>

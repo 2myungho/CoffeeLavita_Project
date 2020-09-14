@@ -22,7 +22,7 @@
           </h1>
 
           <ul class="header-text">
-          <li>
+            <li class="myname">
 				<c:if test="${member != null}">
 					<p><span class="memberName">${member.name}</span>님 안녕하세요.</p>
 				</c:if>
@@ -30,21 +30,21 @@
             <li><a href="#">알림</a></li>
             <li>
             	<c:if test="${member == null}"> <a href="log.jsp">로그인</a> </c:if>
-            	<c:if test="${member != null}"><a href="/logout">로그아웃</a></c:if>
+            	<c:if test="${member != null}"><a href="logout.jsp">로그아웃</a></c:if>
             </li>
-            <li><a href="mypage.jsp">마이페이지</a></li>
+            <li>
+            	<c:if test="${member == null}"><a href="" class="alert">마이페이지</a></c:if>
+            	<c:if test="${member != null}"><a href="mypage.jsp">마이페이지</a></c:if>
             <li><a href="claim.jsp">고객센터</a></li>
             <li>
-              <form>
                 <select class="length">
                   <option selected>KOREA</option>
                   <option>English</option>
                   <option>China</option>
                   <option>Japan</option>
               </select>
-            </form>
             </li>
-		  </ul>
+          </ul>
 		  <div class="last-gnb">
 			<a href="#" class="two_bar"></a>
 			<a href="#" class="two_bar"></a>
@@ -135,7 +135,7 @@
 								</div>
 
 								<div class="sign-second-box">
-									<form method="POST" action="index.do">
+									<form method="POST" action="log.do">
 										<label for="ID">ID</label>
 										<input type="text" name="mem_id"  id="ID" size="10" maxlength="10" placeholder="아이디를 입력해 주세요." required>
 
@@ -358,7 +358,7 @@
 									시간대 할인 알람을 받으실 수 있습니다.</div>
 									<p class="newsign-agree-text">회원가입</p>
 									<div class="newsign-third-box">
-										<form method="post" action="log.do">
+										<form method="post" action="register.do">
 											<label for="mem_id" class="id-label">ID</label>
 											<input type="text" name="mem_id" placeholder="아이디를 입력하세요." class="log-input log-id" required>
 											<label for="mem_pw" class="id-label">PassWord</label>
@@ -419,6 +419,12 @@
 		}
 	  });
 	}
+		
+		$(document).ready(function(){
+			$(".alert").click(function(){
+				alert("로그인이 필요한 서비스입니다.")
+			})
+		})
 		
 	</script>
 </body>
