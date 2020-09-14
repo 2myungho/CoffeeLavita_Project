@@ -1,5 +1,7 @@
 package myspring.user.dao;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -16,6 +18,12 @@ public class BoardDaoImplMapper implements BoardDAO {
 	public void write(BoardVO vo) {
 		System.out.println("여기는 Dao입니당 : "+ vo);
 		boardMapper.insert(vo);
+	}
+
+	@Override
+	public List<BoardVO> list() {
+		List<BoardVO> boardList = boardMapper.list();
+		return boardList;
 	}
 
 }

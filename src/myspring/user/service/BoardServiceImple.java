@@ -1,5 +1,7 @@
 package myspring.user.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,11 @@ public class BoardServiceImple implements BoardService {
 	public void write(BoardVO vo) {
 		System.out.println("여기는 서비스입니당. : " + vo);
 		boarddao.write(vo);
+	}
+
+	@Override
+	public List<BoardVO> list() {
+		return boarddao.list();
 	}
 
 }
