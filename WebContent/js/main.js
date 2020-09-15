@@ -148,20 +148,21 @@ $(function(){
 $(document).ready(function(){
 	var url = location.href;
 	var side0 = url.indexOf('claim');
-	var side1 = url.indexOf('claim1');
+	var side1 = url.indexOf('list');
 	var side2 = url.indexOf('claim2');
 	var side3 = url.indexOf('claim3');
+	var side4 = url.indexOf('claim4');
+
 	if(side0 !=-1){
 		$('.side-right-inner>li').eq(0).addClass('sideColor')
-	}
-	if(side1 !=-1){
+	}else if(side1 !=-1){
 		$('.side-right-inner>li').eq(1).addClass('sideColor')
-	}
-	if(side2 !=-1){
+	}else if(side2 !=-1){
 		$('.side-right-inner>li').eq(2).addClass('sideColor')
-	}
-	if(side3 !=-1){
+	}else if(side3 !=-1){
 		$('.side-right-inner>li').eq(3).addClass('sideColor')
+	}else if(side4 !=-1){
+		$('.side-right-inner>li').eq(4).addClass('sideColor')
 	}
 });
 

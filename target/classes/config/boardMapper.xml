@@ -6,22 +6,19 @@
 
    <!-- 게시판 글 작성 -->
    <insert id="insert" parameterType="Board">
-	   INSERT INTO MP_BOARD(    BNO 
-	   					      , TITLE 
-	   					      , CONTENT 
-	   					      , WRITER  )
-	                 VALUES(    MP_BOARD_SEQ.NEXTVAL 
-	                 		  , #{title}
-	                 		  , #{content}
-	                 		  , #{writer}  )
+	   INSERT INTO MP_BOARD(BNO , TITLE , CONTENT , WRITER  )
+	                 VALUES(MP_BOARD_SEQ.NEXTVAL , #{title}, #{content}, #{writer}  )
    </insert>
    
    <select id="list" resultType="Board">
-		SELECT   BNO
-			   , TITLE
-			   , WRITER
-			   , REGDATE
+		SELECT BNO, TITLE, WRITER, REGDATE
 		  FROM MP_BOARD
 		  ORDER BY BNO DESC
+	</select>
+	<!--게시물 조회 -->
+	<select id="read" resultType="Board">
+		SELECT BNO, TITLE, CONTENT, WRITER,REGDATE
+			FROM MP_BOARD
+			WHERE BNO = #{bno}
 	</select>
  </mapper>

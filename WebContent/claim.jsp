@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
- <%@ taglib  prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"
+%>
+<%@ taglib  prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,24 +18,24 @@
       <div id = "header">
         <div class = "header-inner">
           <h1 class ="logo">
-            <a href="index.jsp" title="¶óºñÅ¸ ¸ÞÀÎ ·Î°í">¶óºñÅ¸ ·Î°í</a>
+            <a href="index.jsp" title="ë¼ë¹„íƒ€ ë©”ì¸ ë¡œê³ ">ë¼ë¹„íƒ€ ë¡œê³ </a>
           </h1>
 
           <ul class="header-text">
             <li class="myname">
 				<c:if test="${member != null}">
-					<p><span class="memberName">${member.name}</span>´Ô ¾È³çÇÏ¼¼¿ä.</p>
+					<p><span class="memberName">${member.name}</span>ë‹˜ ì•ˆë…•í•˜ì„¸ìš”.</p>
 				</c:if>
 			</li>
-            <li><a href="#">¾Ë¸²</a></li>
+            <li><a href="#">ì•Œë¦¼</a></li>
             <li>
-            	<c:if test="${member == null}"> <a href="log.jsp">·Î±×ÀÎ</a> </c:if>
-            	<c:if test="${member != null}"><a href="logout.jsp">·Î±×¾Æ¿ô</a></c:if>
+            	<c:if test="${member == null}"> <a href="log.jsp">ë¡œê·¸ì¸</a> </c:if>
+            	<c:if test="${member != null}"><a href="logout.jsp">ë¡œê·¸ì•„ì›ƒ</a></c:if>
             </li>
             <li>
-            	<c:if test="${member == null}"><a href="" class="alert">¸¶ÀÌÆäÀÌÁö</a></c:if>
-            	<c:if test="${member != null}"><a href="mypage.jsp">¸¶ÀÌÆäÀÌÁö</a></c:if>
-            <li><a href="claim.jsp">°í°´¼¾ÅÍ</a></li>
+            	<c:if test="${member == null}"><a href="" class="alert">ë§ˆì´íŽ˜ì´ì§€</a></c:if>
+            	<c:if test="${member != null}"><a href="mypage.jsp">ë§ˆì´íŽ˜ì´ì§€</a></c:if>
+            <li><a href="claim.jsp">ê³ ê°ì„¼í„°</a></li>
             <li>
                 <select class="length">
                   <option selected>KOREA</option>
@@ -56,10 +57,10 @@
 				<li>
 				  <a href="#">COFFEE & LAVITA</a>
 				  <ul class="nav-subbar">
-					<li><a href="#">LAVITA ¼Ò°³</a></li>
+					<li><a href="#">LAVITA ì†Œê°œ</a></li>
 					<li><a href="#">LAVITA BI</a></li>
-					<li><a href="#">LAVITA Ã¤¿ë</a></li>
-					<li><a href="#">LAVITA Ä¿ÇÇ</a></li>
+					<li><a href="#">LAVITA ì±„ìš©</a></li>
+					<li><a href="#">LAVITA ì»¤í”¼</a></li>
 				  </ul>
 
 				</li>
@@ -67,48 +68,48 @@
 				<li>
 				  <a href="#">MENU</a>
 				   <ul class="nav-subbar">
-					 <li><a href="coffee-menu.jsp">Ä¿ÇÇ</a></li>
-					 <li><a href="#">À½·á&Â÷</a></li>
-					 <li><a href="#">µðÀúÆ®</a></li>
-					 <li><a href="#">»óÇ°</a></li>
-					 <li><a href="#">Ä«µå</a></li>
-					 <li><a href="#">¿µ¾ç¼ººÐÇ¥</a></li>
+					 <li><a href="coffee-menu.jsp">ì»¤í”¼</a></li>
+					 <li><a href="#">ìŒë£Œ&ì°¨</a></li>
+					 <li><a href="#">ë””ì €íŠ¸</a></li>
+					 <li><a href="#">ìƒí’ˆ</a></li>
+					 <li><a href="#">ì¹´ë“œ</a></li>
+					 <li><a href="#">ì˜ì–‘ì„±ë¶„í‘œ</a></li>
 				   </ul>
 				</li>
 
 				<li>
 				  <a href="#">EVENT</a>
 				   <ul class="nav-subbar">
-					 <li><a href="#">ÁøÇàÁßÀÎ ÀÌº¥Æ®</a></li>
-					 <li><a href="#">Á¾·áµÈ ÀÌº¥Æ®</a></li>
-					 <li><a href="#">´çÃ·ÀÚ ¹ßÇ¥</a></li>
+					 <li><a href="#">ì§„í–‰ì¤‘ì¸ ì´ë²¤íŠ¸</a></li>
+					 <li><a href="#">ì¢…ë£Œëœ ì´ë²¤íŠ¸</a></li>
+					 <li><a href="#">ë‹¹ì²¨ìž ë°œí‘œ</a></li>
 				   </ul>
 				</li>
 
 				<li>
 				  <a href="#">CARD</a>
 				   <ul class="nav-subbar">
-					 <li><a href="#">LAVITA Ä«µå</a></li>
-					 <li><a href="#">µî±Þ ¹× ÇýÅÃ</a></li>
-					 <li><a href="#">Á¦ÈÞ ÇÒÀÎ Ä«µå</a></li>
+					 <li><a href="#">LAVITA ì¹´ë“œ</a></li>
+					 <li><a href="#">ë“±ê¸‰ ë° í˜œíƒ</a></li>
+					 <li><a href="#">ì œíœ´ í• ì¸ ì¹´ë“œ</a></li>
 				   </ul>
 				</li>
 
 				<li>
 				  <a href="#">STORE</a>
 				   <ul class="nav-subbar">
-					 <li><a href="#">¸ÅÀå Ã£±â</a></li>
-					 <li><a href="#">Æ¯¼ö ¸ÅÀå</a></li>
-					 <li><a href="#">½Å±Ô ¸ÅÀå</a></li>
-					 <li><a href="#">°¡¸Í ¹®ÀÇ</a></li>
+					 <li><a href="#">ë§¤ìž¥ ì°¾ê¸°</a></li>
+					 <li><a href="#">íŠ¹ìˆ˜ ë§¤ìž¥</a></li>
+					 <li><a href="#">ì‹ ê·œ ë§¤ìž¥</a></li>
+					 <li><a href="#">ê°€ë§¹ ë¬¸ì˜</a></li>
 				   </ul>
 				</li>
 
 				<li>
-				  <a href="#">°øÁö»çÇ×</a>
+				  <a href="#">ê³µì§€ì‚¬í•­</a>
 				   <ul class="nav-subbar">
-					 <li><a href="#">°øÁö»çÇ×</a></li>
-					 <li><a href="#">»õ¼Ò½Ä</a></li>
+					 <li><a href="#">ê³µì§€ì‚¬í•­</a></li>
+					 <li><a href="#">ìƒˆì†Œì‹</a></li>
 				   </ul>
 				</li>
 			  </ul>
@@ -119,123 +120,131 @@
       <div id = "content">
 	  		<div class="content-claim">
 				<div class="background-top">
-					<h2>°í°´ÀÇ ¼Ò¸®</h2>
+					<h2>ê³ ê°ì˜ ì†Œë¦¬</h2>
 				</div>
 				<div class="claim-bottom">
-					<div class="location"><a href="main.jsp">¸ÞÀÎ></a><a href="claim.jsp">°í°´ÀÇ¼Ò¸®</a></div>
+					<div class="location"><a href="main.jsp">ë©”ì¸></a><a href="claim.jsp">ê³ ê°ì˜ì†Œë¦¬</a></div>
 					<div class="claim-left">
 						<div class="claim-left-fristbox">
-							<h3>°í°´´ÔÀÇ ¸»¾¸ ±Í´ã¾Æ µè°Ú½À´Ï´Ù.</h3>
-							<p>¸¸Á·½º·¯¿ü´ø Á¡ÀÌ³ª ºÒÆíÇÏ¼Ì´ø Á¡ÀÌ ÀÖÀ¸½Ã´Ù¸é ±ÍÇÑ ÀÇ°ß µé·ÁÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br>
-								Ç×»ó º¸´Ù ³ªÀº ¼­ºñ½º·Î º¸´äÇÏ°Ú½À´Ï´Ù.</p>
-							<a href="#">³ªÀÇ ¹®ÀÇ ³»¿ª</a>
+							<h3>ê³ ê°ë‹˜ì˜ ë§ì”€ ê·€ë‹´ì•„ ë“£ê² ìŠµë‹ˆë‹¤.</h3>
+							<p>ë§Œì¡±ìŠ¤ëŸ¬ì› ë˜ ì ì´ë‚˜ ë¶ˆíŽ¸í•˜ì…¨ë˜ ì ì´ ìžˆìœ¼ì‹œë‹¤ë©´ ê·€í•œ ì˜ê²¬ ë“¤ë ¤ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br>
+								í•­ìƒ ë³´ë‹¤ ë‚˜ì€ ì„œë¹„ìŠ¤ë¡œ ë³´ë‹µí•˜ê² ìŠµë‹ˆë‹¤.</p>
+							<a href="#">ë‚˜ì˜ ë¬¸ì˜ ë‚´ì—­</a>
 						</div>
-						<form method="post">
+						<form role="form" method="post" action="write">
 							<div class="claim-left-secondbox">
 								<table cellspacing="0">
 									<colgroup>
 										<col width="30%">
 										<col width="70%">
 									</colgroup>
-									<tr>
-										<th>»ó´ãºÐ¾ß</th>
-										<td>
-											<select class="claim-select"name="type" id="type">
-												<option value="">¹®ÀÇÀ¯Çü</option>
-												<option value="1">¹®ÀÇ</option>
-												<option value="2">ÄªÂù</option>
-												<option value="3">Á¦¾È</option>
-												<option value="4">ºÒ¸¸</option>
-											</select>
+<!-- 									<tr> -->
+<!-- 										<th>ìƒë‹´ë¶„ì•¼</th> -->
+<!-- 										<td> -->
+<!-- 											<select class="claim-select"name="type" id="type"> -->
+<!-- 												<option value="">ë¬¸ì˜ìœ í˜•</option> -->
+<!-- 												<option value="1">ë¬¸ì˜</option> -->
+<!-- 												<option value="2">ì¹­ì°¬</option> -->
+<!-- 												<option value="3">ì œì•ˆ</option> -->
+<!-- 												<option value="4">ë¶ˆë§Œ</option> -->
+<!-- 											</select> -->
 
-											<select class="claim-select" name="selection" id="selection">
-												<option value="">¼±ÅÃ</option>
-												<option value="1">Æ÷ÀÎÆ®</option>
-												<option value="2">¸â¹ö½Ê Ä«µå</option>
-												<option value="3">±âÇÁÆ® Ä«µå</option>
-												<option value="4">È¸¿øÁ¤º¸</option>
-												<option value="5">ÀÌº¥Æ®</option>
-											</select>
-										</td>
-									</tr>
+<!-- 											<select class="claim-select" name="selection" id="selection"> -->
+<!-- 												<option value="">ì„ íƒ</option> -->
+<!-- 												<option value="1">í¬ì¸íŠ¸</option> -->
+<!-- 												<option value="2">ë©¤ë²„ì‹­ ì¹´ë“œ</option> -->
+<!-- 												<option value="3">ê¸°í”„íŠ¸ ì¹´ë“œ</option> -->
+<!-- 												<option value="4">íšŒì›ì •ë³´</option> -->
+<!-- 												<option value="5">ì´ë²¤íŠ¸</option> -->
+<!-- 											</select> -->
+<!-- 										</td> -->
+<!-- 									</tr> -->
 
-									<tr>
-										<th>
-											<label for="notice-service">´äº¯ ¾Ë¶÷ ¼­ºñ½º</label>
-										</th>
+<!-- 									<tr> -->
+<!-- 										<th> -->
+<!-- 											<label for="notice-service">ë‹µë³€ ì•ŒëžŒ ì„œë¹„ìŠ¤</label> -->
+<!-- 										</th> -->
 										
+<!-- 										<td> -->
+<!-- 											<label for="receive"><span>ë°›ë‹¤</span></label> -->
+<!-- 												<input class="notice-service" type="radio" name="notice-service" value="receive" id="receive" checked> -->
+<!-- 											<label for="not-receive"><span>ë°›ì§€ ì•Šë‹¤</span></label> -->
+<!-- 												<input class="notice-service" type="radio" name="notice-service" value="not-receive" id="not-receive"> -->
+<!-- 										</td> -->
+<!-- 									</tr> -->
+
+<!-- 									<tr> -->
+<!-- 										<th> -->
+<!-- 											<label for="phone-number">ì—°ë½ì²˜</label> -->
+<!-- 										</th> -->
+<!-- 										<td> -->
+<!-- 											<select class="claim-select" name="phone-number"> -->
+<!-- 												<option value="010">010</option> -->
+<!-- 												<option value="011">011</option> -->
+<!-- 												<option value="016">016</option> -->
+<!-- 											</select><p class="phone-line">-</p> -->
+
+<!-- 											<input class="claim-select-input" type="text" size="4" maxlength="4"> -->
+<!-- 											<p class="phone-line">-</p> -->
+<!-- 											<input class="claim-select-input" type="password" size="4" maxlength="4"> -->
+<!-- 										</td> -->
+<!-- 									</tr> -->
+									<tr>
+										<th>
+											<label for="title">ì´ë¦„</label>
+										</th>
 										<td>
-											<label for="receive"><span>¹Þ´Ù</span></label>
-												<input class="notice-service" type="radio" name="notice-service" value="receive" id="receive" checked>
-											<label for="not-receive"><span>¹ÞÁö ¾Ê´Ù</span></label>
-												<input class="notice-service" type="radio" name="notice-service" value="not-receive" id="not-receive">
+											<input class="claim-title" name="writer" type="text" size="20" maxlength="20" placeholder="ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.">
 										</td>
 									</tr>
 
 									<tr>
 										<th>
-											<label for="phone-number">¿¬¶ôÃ³</label>
+											<label for="title">ì œëª©</label>
 										</th>
 										<td>
-											<select class="claim-select" name="phone-number">
-												<option value="010">010</option>
-												<option value="011">011</option>
-												<option value="016">016</option>
-											</select><p class="phone-line">-</p>
-
-											<input class="claim-select-input" type="text" size="4" maxlength="4">
-											<p class="phone-line">-</p>
-											<input class="claim-select-input" type="password" size="4" maxlength="4">
+											<input class="claim-title" name="title" type="text" size="20" maxlength="20" placeholder="ì œëª©ì„ ìž…ë ¥í•˜ì„¸ìš”.">
 										</td>
 									</tr>
 
 									<tr>
 										<th>
-											<label for="title">Á¦¸ñ</label>
+											<label for="consultation">ë‚´ìš©</label>
 										</th>
 										<td>
-											<input class="claim-title" type="text" size="20" maxlength="20" placeholder="Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä.">
-										</td>
-									</tr>
-
-									<tr>
-										<th>
-											<label for="consultation">³»¿ë</label>
-										</th>
-										<td>
-											<textarea name="consultation" id="consultation" rows="5" cols="45">³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä.</textarea>
+											<textarea name="content" id="consultation" rows="5" cols="45" placeholder="ë‚´ìš©ì„ ìž…ë ¥í•˜ì„¸ìš”."> </textarea>
 										</td>
 									</tr>
 									
 
 									<tr>
 										<th>
-											<label for="myfile">ÆÄÀÏÃ·ºÎ</label>
+											<label for="myfile">íŒŒì¼ì²¨ë¶€</label>
 										</th>
 										<td>
 											<div class="file-uplode">
-												<input type="text" value="ÆÄÀÏ¼±ÅÃ" readonly>
+												<input type="text" value="íŒŒì¼ì„ íƒ" readonly>
 												<input type="file" id="myfile">
-												<p>ÆÄÀÏ Ã·ºÎ´Â ¾Æ·¡ÀÇ ÆÄÀÏ¸¸ µî·ÏÀÌ °¡´ÉÇÏ¸ç ÃÖ´ë 2°³(1°³´ç ÃÖ´ë5MB), ÃÑ 10MB±îÁö µî·ÏÀÌ °¡´ÉÇÕ´Ï´Ù.<br>
-												(µî·Ï °¡´É È®ÀåÀÚ : jpg, jpeg, png, gif)</p>
+												<p>íŒŒì¼ ì²¨ë¶€ëŠ” ì•„ëž˜ì˜ íŒŒì¼ë§Œ ë“±ë¡ì´ ê°€ëŠ¥í•˜ë©° ìµœëŒ€ 2ê°œ(1ê°œë‹¹ ìµœëŒ€5MB), ì´ 10MBê¹Œì§€ ë“±ë¡ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>
+												(ë“±ë¡ ê°€ëŠ¥ í™•ìž¥ìž : jpg, jpeg, png, gif)</p>
 											</div>
 										</td>
 									</tr>
 								</table>
-								<input type="submit" value="µî·ÏÇÏ±â">
+								<input type="submit" value="ë“±ë¡í•˜ê¸°">
 								<div class="claim-left-third">
-									<p>¸ð´ÏÅÍ ³Ê¸Ó¿¡ ÀÖ´Â »ó´ã¿øÀº °í°´ ¿©·¯ºÐÀÇ ¼ÒÁßÇÑ °¡Á· Áß ÇÑ »ç¶÷ÀÏ ¼ö ÀÖ½À´Ï´Ù.<br>
-									*»ó´ã¿øÀ» ÇâÇÑ ¾ð¾îÆø·Â(¿å¼³, ºñ¹æ, ¼ºÈñ·Õ)½Ã »çÀü°íÁö ¾øÀÌ °Ô½Ã¹°ÀÌ »èÁ¦ µÉ ¼ö ÀÖ½À´Ï´Ù.</p>
+									<p>ëª¨ë‹ˆí„° ë„ˆë¨¸ì— ìžˆëŠ” ìƒë‹´ì›ì€ ê³ ê° ì—¬ëŸ¬ë¶„ì˜ ì†Œì¤‘í•œ ê°€ì¡± ì¤‘ í•œ ì‚¬ëžŒì¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>
+									*ìƒë‹´ì›ì„ í–¥í•œ ì–¸ì–´í­ë ¥(ìš•ì„¤, ë¹„ë°©, ì„±í¬ë¡±)ì‹œ ì‚¬ì „ê³ ì§€ ì—†ì´ ê²Œì‹œë¬¼ì´ ì‚­ì œ ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
 									<div class="claim-left-third-inner">
 										<div class="claim-left-third-left">
-											<h3>°í°´ÀÇ ¼Ò¸®</h3>
-											<p>-ÆòÀÏ : ´ÙÀ½ ³¯ ´äº¯¿Ï·á<br>
-											   -ÅäÀÏ °øÈÞÀÏ : ÈÞÀÏ ÀÌÈÄ ´äº¯¿Ï·á</p>
+											<h3>ê³ ê°ì˜ ì†Œë¦¬</h3>
+											<p>-í‰ì¼ : ë‹¤ìŒ ë‚  ë‹µë³€ì™„ë£Œ<br>
+											   -í† ì¼ ê³µíœ´ì¼ : íœ´ì¼ ì´í›„ ë‹µë³€ì™„ë£Œ</p>
 										</div>
 										<div class="claim-left-third-right">
-											<h3>ÀüÈ­:000-0000-0000</h3>
-											<p>-ÆòÀÏ : ¿ÀÀü 9½Ã ~ ¿ÀÈÄ 6½Ã<br>
-											   -Åä,ÀÏ,°øÈÞÀÏ : ÈÞ¹«</p>
+											<h3>ì „í™”:000-0000-0000</h3>
+											<p>-í‰ì¼ : ì˜¤ì „ 9ì‹œ ~ ì˜¤í›„ 6ì‹œ<br>
+											   -í† ,ì¼,ê³µíœ´ì¼ : íœ´ë¬´</p>
 										</div>
 									</div>
 								 </div>
@@ -245,10 +254,11 @@
 
 					<div class="side-right">
 						<ul class="side-right-inner">
-							<li><a href="claim.jsp">°í°´ÀÇ ¼Ò¸®</a></li>
-							<li><a href="#">ÀÚÁÖÇÏ´Â Áú¹®</a></li>
-							<li><a href="#">Á¦ÈÞ, ¸¶ÄÉÆÃÁ¦¾È</a></li>
-							<li><a href="#">Ã¤¿ë Á¤º¸</a></li>
+							<li><a href="claim.jsp">ê³ ê°ì˜ ì†Œë¦¬</a></li>
+							<li><a href="list">ë¬¸ì˜ë‚´ìš©</a></li>
+							<li><a href="#">ìžì£¼í•˜ëŠ” ì§ˆë¬¸</a></li>
+							<li><a href="#">ì œíœ´, ë§ˆì¼€íŒ…ì œì•ˆ</a></li>
+							<li><a href="#">ì±„ìš© ì •ë³´</a></li>
 						</ul>
 					</div>
 				</div>
@@ -258,21 +268,21 @@
         
       <div id = "footer1">
         <div class = "footer1-inner">
-          <ul>
-            <li><a href="#">°³ÀÎÁ¤º¸ Ã³¸® ¹æÄ§</a></li>
-            <li><a href="#">¿µ»óÁ¤º¸Ã³¸®±â±â¿î¿µ°ü¸®¹æÄ§</a></li>
-            <li><a href="#">È¨ÆäÀÌÁö ÀÌ¿ë¾à°ü</a></li>
-            <li><a href="#">À±¸®°æ¿µ</a></li>
-          </ul>
+          <ul class="side-right-inner">
+           	<li><a href="claim.jsp">ê³ ê°ì˜ ì†Œë¦¬</a></li>
+			<li><a href="#">ìžì£¼í•˜ëŠ” ì§ˆë¬¸</a></li>
+			<li><a href="#">ì œíœ´, ë§ˆì¼€íŒ…ì œì•ˆ</a></li>
+			<li><a href="#">ì±„ìš© ì •ë³´</a></li>
+		</ul>
       </div>
       </div>
 
       <div id = "footer2">
         <div class="footer2-inner">
           <p class="footer-lavita">COFFEE & LAVITA</p>
-          <P>(ÁÖ)COFFEE & LAVITA ´ëÇ¥ÀÌ»ç: ÀÌ¸íÈ£ »ç¾÷ÀÚµî·Ï¹øÈ£ 000-00-00000 Åë½ÅÆÇ¸Å¾÷½Å°í Á¦ 2019-¼­¿ï°­³²-00560
-          <br>¼­¿ï½Ã °­³²±¸ ºÀÀº»ç·Î 99±æ 7 °í°´¼¾ÅÍ 02-000-0000 (09:00 ~ 18:00) Email: cl@lavitako.combako.com
-          <br>copyright¨Ï 2019.COFFEE & LAVITA
+          <P>(ì£¼)COFFEE & LAVITA ëŒ€í‘œì´ì‚¬: ì´ëª…í˜¸ ì‚¬ì—…ìžë“±ë¡ë²ˆí˜¸ 000-00-00000 í†µì‹ íŒë§¤ì—…ì‹ ê³  ì œ 2019-ì„œìš¸ê°•ë‚¨-00560
+          <br>ì„œìš¸ì‹œ ê°•ë‚¨êµ¬ ë´‰ì€ì‚¬ë¡œ 99ê¸¸ 7 ê³ ê°ì„¼í„° 02-000-0000 (09:00 ~ 18:00) Email: cl@lavitako.combako.com
+          <br>copyrightâ“’ 2019.COFFEE & LAVITA
         </div>
       </div>
     </div>
@@ -280,7 +290,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".alert").click(function(){
-				alert("·Î±×ÀÎÀÌ ÇÊ¿äÇÑ ¼­ºñ½ºÀÔ´Ï´Ù.")
+				alert("ë¡œê·¸ì¸ì´ í•„ìš”í•œ ì„œë¹„ìŠ¤ìž…ë‹ˆë‹¤.")
 			})
 		})
 	</script>

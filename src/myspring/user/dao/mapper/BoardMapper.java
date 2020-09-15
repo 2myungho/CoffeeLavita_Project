@@ -10,4 +10,5 @@ import myspring.user.vo.BoardVO;
 public interface BoardMapper {
 	void insert(BoardVO vo); 
 	List<BoardVO> list();
+	BoardVO read(int bno);
 }

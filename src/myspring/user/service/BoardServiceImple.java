@@ -25,4 +25,9 @@ public class BoardServiceImple implements BoardService {
 		return boarddao.list();
 	}
 
+	@Override
+	public BoardVO read(int bno) {
+		return boarddao.read(bno);
+	}
+
 }

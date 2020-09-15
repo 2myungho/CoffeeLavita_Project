@@ -15,11 +15,6 @@ public class BoardController {
 	@Autowired
 	BoardService service;
 	
-	//게시판 글 작성 화면
-	@RequestMapping(value = "/writeView", method = RequestMethod.GET)
-	public void writeView() {
-		System.out.println("대기");
-	}
 	//게시판 글 작성
 	@RequestMapping(value = "/write", method = RequestMethod.POST)
 	public String write(BoardVO vo) {
@@ -34,5 +29,14 @@ public class BoardController {
 		System.out.println("게시물 목록입니당. : " + model);
 		model.addAttribute("list",service.list());
 		return "list";
+	}
+	
+	//게시판 조회
+	@RequestMapping(value="/listView", method = RequestMethod.GET)
+	public String read(BoardVO vo, Model model) {
+		System.out.println("게시물 목록입니당 : "+ vo);
+		model.addAttribute("read", service.read(vo.getBno()));
+		return "listView";
+		
 	}
 }

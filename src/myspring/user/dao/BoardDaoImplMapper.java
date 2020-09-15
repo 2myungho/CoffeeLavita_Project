@@ -26,4 +26,9 @@ public class BoardDaoImplMapper implements BoardDAO {
 		return boardList;
 	}
 
+	@Override
+	public BoardVO read(int bno) {
+		return boardMapper.read(bno);
+	}
+
 }

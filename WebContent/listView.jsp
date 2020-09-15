@@ -1,23 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"
 %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib  prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/listView.css">
 	<link rel="stylesheet" href="css/nav-footer.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="js/main.js"></script>
 	<meta name="viewport" content="width=device-width">
-<title>게시판 목록</title>
-<style>
-	tr:nth-of-type(even){background:#f2f2f2;}
-</style>
+<title>Insert title here</title>
 </head>
- <body>
+<body>
     <div id = "wrap">
       <div id = "header">
         <div class = "header-inner">
@@ -130,38 +126,48 @@
 					<div class="location"><a href="main.html">메인></a><a href="claim.html">문의내용</a></div>
 					<div class="claim-left">
 						<div id="root">
-							<header>
-								<h1>문의 내용 게시판</h1>
-							</header>
-							<hr />
-						
-							<section id="container">
-								<form role="form" method="post" action="list">
-									<table>
-										<colgroup>
-											<col style="width: 15%;">
-											<col style="width: 45%;">
-											<col style="width: 20%;">
-											<col style="width: 20%;">
-										</colgroup>
-										<tr class="tableHead"><th>번호</th><th>제목</th><th>작성자</th><th>등록일</th></tr>
-										
-										<c:forEach items="${list}" var = "list">
-											<tr class="bottom-line">
-												<td><c:out value="${list.bno}" /></td>
-												<td class="left">
-													<a href="listView?bno=${list.bno}"><c:out value="${list.title}" /></a>
-												</td>
-												<td class="left"><c:out value="${list.writer}" /></td>
-												<td><fmt:formatDate value="${list.regdate}" pattern="yyyy-MM-dd"/></td>											
-											</tr>
-										</c:forEach>
-										
-									</table>
-								</form>
-							</section>
-							<hr />
-						</div>
+                            <header>
+                                <h1> 게시판</h1>
+                            </header>
+                            <hr />
+                            
+                            <section id="container">
+                                <form role="form" method="post">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label for="bno">글 번호</label>${read.bno}
+                                                </td>
+                                            </tr>	
+                                            <tr>
+                                                <td>
+                                                    <label for="title">제목</label>${read.title}
+                                                </td>
+                                            </tr>	
+                                            <tr>
+                                                <td class="content-height">
+                                                    <label for="content">내용</label><div class="content-box">${read.content}</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="writer">작성자</label>${read.writer}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="regdate">작성날짜</label>${read.regdate}
+                                                    	
+                                                </td>
+                                            </tr>		
+                                        </tbody>			
+                                    </table>
+                                </form>
+                            </section>
+                            <hr />
+                            <button class="back"><a href="#" onclick="history.go(-1)"> 목록으로 돌아가기 </a></button>
+                        </div>
 						
 					</div>
 

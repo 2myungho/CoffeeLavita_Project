@@ -10,4 +10,7 @@ public interface BoardService {
 	
 	//게시글 목록 조회
 	public List<BoardVO> list();
+	
+	//게시물 조회
+	public BoardVO read(int bno);
 }

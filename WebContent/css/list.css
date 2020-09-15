@@ -1,0 +1,121 @@
+@charset "EUC-KR";
+@media screen and (min-width:1025px){
+	/*claim srart*/
+	.content-claim{
+		width:100%;
+	}
+	.content-claim .background-top{
+		width:100%;
+		height:450px;
+		background:url(../image/mypage-claim.png)no-repeat;
+	}
+	.background-top>h2{
+		font-size:40px;
+		font-weight:bold;
+		text-align:center;
+		line-height:450px;
+		color:#ffffff;
+	}
+	.claim-bottom{
+		width:1200px;
+/* 		height:800px; */
+		margin:0 auto;
+		padding:100px 0;
+		color:#444444;
+		overflow:hidden;
+		position:relative;
+	}
+	.claim-left{
+		width:880px;
+		height:100%;
+		float:left;
+		border-top:2px solid #666;
+    }
+    #root h1{line-height: 60px;}
+    .tableHead{height:40px;}
+    table{width:100%; text-align: center;}
+	.bottom-line{border-bottom: 1px solid #444;}
+	th{font-size:18px; margin:10px 0;}
+	td{font-size:15px; padding: 10px 0;}
+	.left{text-align: left; padding-left:20px;}
+
+		/*claim-end*/
+}
+
+/********************************************************테블릿*************************************************************/
+@media screen and (min-width:768px) and (max-width:1024px){
+	/*claim srart*/
+	.content-claim{
+		width:100%;
+	}
+	.content-claim .background-top{
+		width:100%;
+		height:450px;
+		background:url(../image/mypage-claim.png)no-repeat 45% 0;
+	}
+	.background-top>h2{
+		font-size:40px;
+		font-weight:bold;
+		text-align:center;
+		line-height:450px;
+		color:#ffffff;
+	}
+	.claim-bottom{
+		width:95%;
+		overflow: hidden;
+		margin:0 auto;
+		padding:100px 0;
+		color:#444444;
+		overflow:hidden;
+		position:relative;
+	}
+	.claim-left{
+		width:100%;
+	}
+    #root h1{line-height: 50px;}
+    .tableHead{height:40px;}
+    table{width:100%; text-align: center;}
+	.bottom-line{border-bottom: 1px solid #444;}
+	th{font-size:18px; margin:10px 0; }
+	td{font-size:15px; padding: 20px 0;}
+	.left{text-align: left;  padding-left:10px;}
+}
+
+/***********************************************************핸드폰*********************************************************/
+@media screen and (max-width:767px){
+	/*claim srart*/
+	.content-claim{
+		width:100%;
+	}
+	.content-claim .background-top{
+		width:100%;
+		height:200px;
+		background:url(../image/mypage-claim.png)no-repeat 45% 0;
+	}
+	.background-top>h2{
+		font-size:20px;
+		font-weight:bold;
+		text-align:center;
+		line-height:200px;
+		color:#ffffff;
+	}
+	.claim-bottom{
+		width:95%;
+		overflow: hidden;
+		margin:0 auto;
+		padding:60px 0;
+		color:#444444;
+		overflow:hidden;
+		position:relative;
+	}
+	.claim-left{
+		width:100%;
+	}
+    #root h1{line-height: 40px; font-size:20px;}
+    .tableHead{height:30px;}
+    table{width:100%; text-align: center;}
+	.bottom-line{border-bottom: 1px solid #444;}
+	th{font-size:14px; margin:10px 0; }
+	td{font-size:12px; padding:4px 0;}
+		/*claim-end*/
+}
