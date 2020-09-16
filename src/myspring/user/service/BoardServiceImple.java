@@ -30,4 +30,16 @@ public class BoardServiceImple implements BoardService {
 		return boarddao.read(bno);
 	}
 
+	@Override
+	public void update(BoardVO vo) {
+		System.out.println("서비스입니다 : " + vo);
+		boarddao.update(vo);
+	}
+
+	@Override
+	public void delete(int bno) {
+		System.out.println("서비스입니다 : " + bno);
+		boarddao.delete(bno);
+	}
+
 }

@@ -132,12 +132,12 @@
                             <hr />
                             
                             <section id="container">
-                                <form role="form" method="post">
+                                <form role="form" method="post" name="readForm">
                                     <table>
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <label for="bno">글 번호</label>${read.bno}
+                                                    <label for="bno">글 번호</label> <input name="bno" value="${read.bno}" readonly class="bnoinput">
                                                 </td>
                                             </tr>	
                                             <tr>
@@ -158,11 +158,14 @@
                                             <tr>
                                                 <td>
                                                     <label for="regdate">작성날짜</label>${read.regdate}
-                                                    	
                                                 </td>
                                             </tr>		
                                         </tbody>			
                                     </table>
+                                    <div class="btnBox">
+                                    	<button type="submit" class="update_btn">수정</button>
+										<button type="submit" class="delete_btn">삭제</button>
+                                    </div>
                                 </form>
                             </section>
                             <hr />
@@ -211,7 +214,23 @@
 			$(".alert").click(function(){
 				alert("로그인이 필요한 서비스입니다.")
 			})
+			
+			var formObj = $("form[name = 'readForm']");
+			//수정
+			$(".update_btn").on("click", function(){
+				formObj.attr("action", "updateViewlist");
+				formObj.attr("method","post");
+				formObj.submit();
+			})
+			
+			//삭제
+			$(".delete_btn").on("click",function(){
+				formObj.attr("action", "delete");
+				formObj.attr("method", "post");
+				formObj.submit();
+			})
 		})
+		
 	</script>
   </body>
 </html>

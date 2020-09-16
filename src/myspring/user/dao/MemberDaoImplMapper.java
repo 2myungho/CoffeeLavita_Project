@@ -1,5 +1,7 @@
 package myspring.user.dao;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -21,6 +23,12 @@ public class MemberDaoImplMapper implements MemberDao {
 	public MemberVO login(MemberVO vo) {
 		System.out.println("여기는 dao입니당 : " + vo);
 		return memberMapper.login(vo);
+	}
+
+	@Override
+	public List<MemberVO> master() {
+		System.out.println("여기는 마스터의 dao입니다.");
+		return memberMapper.master();
 	}
 	
 }

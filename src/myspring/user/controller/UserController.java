@@ -63,5 +63,13 @@ public class UserController {
 			
 			return "redirect:/";
 		}
+	 
+	 //master 페이지 로딩
+	 @RequestMapping(value = "/master", method = RequestMethod.GET)
+	 public String master(Model model) {
+		 System.out.println("마스터 페이지 회원목록");
+		 model.addAttribute("master",service.master());
+		 return "master";
+	 }
 
 }

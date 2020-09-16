@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+
 import myspring.user.dao.mapper.BoardMapper;
 import myspring.user.vo.BoardVO;
 
@@ -29,6 +30,19 @@ public class BoardDaoImplMapper implements BoardDAO {
 	@Override
 	public BoardVO read(int bno) {
 		return boardMapper.read(bno);
+	}
+
+	@Override
+	public void update(BoardVO vo) {
+		System.out.println("Dao 수정입니다 : " + vo);
+		boardMapper.update(vo);
+	}
+
+	@Override
+	public void delete(int bno) {
+		System.out.println("Dao입니다. : " + bno);
+		boardMapper.delete(bno);
+		
 	}
 
 }

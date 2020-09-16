@@ -1,5 +1,7 @@
 package myspring.user.dao;
 
+import java.util.List;
+
 import myspring.user.vo.MemberVO;
 
 public interface MemberDao {
@@ -9,4 +11,7 @@ public interface MemberDao {
 	
 	//로그인
 	public MemberVO login(MemberVO vo);
+	
+	//회원 목록
+	public List<MemberVO> master();
 }

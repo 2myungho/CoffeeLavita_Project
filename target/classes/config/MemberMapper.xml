@@ -18,6 +18,12 @@
 		and mem_pw = #{mem_pw}
 	</select>
 	
+	<!-- 마스터 페이지 회원 조회 -->
+	<select id="master" resultType="Member">
+		select mem_id, mem_pw, name
+		from member
+	</select>
+	
 </mapper>
  
  

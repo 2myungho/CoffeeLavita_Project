@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-    <%@ taglib  prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib  prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +23,12 @@
           <ul class="header-text">
             <li class="myname">
 				<c:if test="${member != null}">
-					<p><span class="memberName">${member.name}</span>¥‘ æ»≥Á«œººø‰.</p>
+					<c:if test="${member.mem_id == 'test10'}">
+							<p><a href="master" class="memberName">${member.name}</a>¥‘ æ»≥Á«œººø‰.</p>
+					</c:if>
+					<c:if test="${member.mem_id != 'test10'}">
+						<p><span class="memberName">${member.name}</span>¥‘ æ»≥Á«œººø‰.</p>
+					</c:if>
 				</c:if>
 			</li>
             <li><a href="#">æÀ∏≤</a></li>
