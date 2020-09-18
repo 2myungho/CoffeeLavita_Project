@@ -135,7 +135,7 @@
 								</div>
 
 								<div class="sign-second-box">
-									<form method="POST" action="log.do">
+									<form method="POST" action="log.do" id="loginForm">
 										<label for="ID">ID</label>
 										<input type="text" name="mem_id"  id="ID" size="10" maxlength="10" placeholder="아이디를 입력해 주세요." required>
 
@@ -358,7 +358,7 @@
 									시간대 할인 알람을 받으실 수 있습니다.</div>
 									<p class="newsign-agree-text">회원가입</p>
 									<div class="newsign-third-box">
-										<form method="post" action="register.do">
+										<form method="post" action="register.do" name="registerForm" id="registerForm">
 											<label for="mem_id" class="id-label">ID</label>
 											<input type="text" name="mem_id" placeholder="아이디를 입력하세요." class="log-input log-id" required>
 											<label for="mem_pw" class="id-label">PassWord</label>
@@ -424,8 +424,13 @@
 			$(".alert").click(function(){
 				alert("로그인이 필요한 서비스입니다.")
 			})
+			$("#registerForm").submit(function(){
+				alert("회원가입이 완료되었습니다.")
+			})
+			$("#loginForm").submit(function(){
+				alert("로그인이 완료되었습니다.")
+			})
 		})
-		
 	</script>
 </body>
 </html>

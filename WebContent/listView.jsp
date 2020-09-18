@@ -227,6 +227,7 @@
 			$(".delete_btn").on("click",function(){
 				formObj.attr("action", "delete");
 				formObj.attr("method", "post");
+				alert("게시물 삭제가 완료되었습니다.")
 				formObj.submit();
 			})
 		})

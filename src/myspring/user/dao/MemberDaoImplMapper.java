@@ -30,5 +30,21 @@ public class MemberDaoImplMapper implements MemberDao {
 		System.out.println("여기는 마스터의 dao입니다.");
 		return memberMapper.master();
 	}
+
+	@Override
+	public void delete(String vo) {
+		System.out.println("여기는 제거의 dao입니다.");
+			memberMapper.delete(vo);
+	}
+
+	@Override
+	public MemberVO masterView(String id) {
+		return memberMapper.masterView(id);
+	}
+
+	@Override
+	public void update(MemberVO vo) {
+		memberMapper.update(vo);
+	}
 	
 }

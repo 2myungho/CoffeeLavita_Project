@@ -6,18 +6,13 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Mapper;
 
 import myspring.user.vo.MemberVO;
-import myspring.user.vo.UserVO;
 
-//@MyMapper
 @Mapper
 public interface MemberMapper {
-	//@Select("select * from users where userid=#{id}")
-	//UserVO selectUserById(@Param("id") String id);
-//	MemberVO selectUserById(String id);
-//	List<MemberVO> selectUserList();
 	void insertUser(MemberVO memberVO);
 	MemberVO login(MemberVO memberVO);
 	List<MemberVO> master();
-//	void updateUser(MemberVO memberVO);
-//	void deleteUser(String id);
+	void delete(String vo);
+	MemberVO masterView(String id);
+	void update(MemberVO vo);
 }

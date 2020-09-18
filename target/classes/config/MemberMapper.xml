@@ -22,7 +22,30 @@
 	<select id="master" resultType="Member">
 		select mem_id, mem_pw, name
 		from member
+		order by mem_id DESC
 	</select>
+	
+	<!-- 마스터 페이지 한 명씩 불러오기 -->
+	<select id="masterView" resultType="Member">
+		select mem_id, mem_pw, name
+			from member
+			where mem_id = #{mem_id}
+			
+	</select>
+	<!-- 마스터 페이지 회원 삭제 -->
+	<delete id="delete" parameterType="String">
+		delete
+		from member
+		where mem_id = #{mem_id}
+	</delete>
+	<!-- 게시물 업데이트 -->
+	<update id="update" parameterType="Member">
+		update member
+			set mem_id = #{mem_id},
+				mem_pw = #{mem_pw},
+				name = #{name}
+			where mem_id = #{mem_id}
+	</update>
 	
 </mapper>
  

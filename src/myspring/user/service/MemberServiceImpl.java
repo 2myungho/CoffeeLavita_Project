@@ -30,6 +30,21 @@ public class MemberServiceImpl implements MemberService {
 		return memberdao.master();
 	}
 
+	@Override
+	public void delete(String user) {
+		memberdao.delete(user);
+	}
+
+	@Override
+	public MemberVO masterView(String id) {
+		return memberdao.masterView(id);
+	}
+
+	@Override
+	public void update(MemberVO vo) {
+		memberdao.update(vo);
+	}
+
 
 
 }

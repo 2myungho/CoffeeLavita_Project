@@ -202,6 +202,9 @@
 			event.preventDefault();
 			location.href = "list";
 		})
+		$(".update_btn").on("click", function(){
+			alert("회원 정보가 수정되었습니다.");
+		})
 	})
 	</script>
 </body>

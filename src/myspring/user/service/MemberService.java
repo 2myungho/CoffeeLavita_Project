@@ -10,4 +10,10 @@ public interface MemberService {
 	public MemberVO login(MemberVO user);
 	
 	public List<MemberVO> master();
+	
+	public void delete(String user);
+	
+	public MemberVO masterView(String id);
+	
+	public void update(MemberVO vo);
 }

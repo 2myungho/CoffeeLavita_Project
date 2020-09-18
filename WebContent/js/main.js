@@ -72,7 +72,7 @@ $(document).ready(function(){
 			main_btn = 0;
 		}
 		main_next = $('.gallery-list li').width();
-		$('.gallery-list').animate({left: -main_next*main_btn},600,function(){
+		$('.gallery-list').stop().animate({left: -main_next*main_btn},600,function(){
 			$('.ctrl-box a').attr('class','bullet');
 			$('.ctrl-box a').eq(main_btn).attr('class','ctrl-box-active');
 		});
@@ -83,7 +83,7 @@ $(document).ready(function(){
 			main_btn = 2;
 		}
 		main_next = $('.gallery-list li').width();
-		$('.gallery-list').animate({left: -main_next*main_btn},600,function(){
+		$('.gallery-list').stop().animate({left: -main_next*main_btn},600,function(){
 			$('.ctrl-box a').attr('class','bullet');
 			$('.ctrl-box a').eq(main_btn).attr('class','ctrl-box-active');
 		});

@@ -5,7 +5,6 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 
 import myspring.user.vo.BoardVO;
-import myspring.user.vo.UserVO;
 
 @Mapper
 public interface BoardMapper {
