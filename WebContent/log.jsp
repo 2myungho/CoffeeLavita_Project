@@ -143,7 +143,7 @@
 										<input type="password" name="mem_pw" id="PassWord" size="10" maxlength="10"  placeholder="비밀번호를 입력해 주세요." autofocus required>
 
 										<label for="sign-checkbox">아이디 저장</label>
-<!-- 										<input type="checkbox" id="sign-checkbox"> -->
+										<input type="checkbox" id="sign-checkbox">
 
 										<input type="submit" value="로그인">
 									</form>
