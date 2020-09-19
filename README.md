@@ -61,6 +61,8 @@
 - 1차 진행 기간 : 2019. 12 - 2020. 1
   * Html, CSS, Javascript, JQuery 를 이용하여 홈페이지 폼 제작
 - 2차 진행 기간 : 2020. 09. 07 - 2020. 09. 18
+  * Spring Framework, Jsp, Oracle,을 이용하여 기능 구현
+  
 - 목표 : SpringFramework와 Oracle을 활용하여 작년에 만들어둔 홈페이지에 기능을 추가해보자!
 
 ## 3. 개인프로젝트 제작 순서
