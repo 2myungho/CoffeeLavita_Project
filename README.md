@@ -106,7 +106,7 @@
 
 ## 5. 시나리오 & 결과 📢
 
-![login](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/login.gif)
+![login](https://user-images.githubusercontent.com/52882578/93667960-7c0d4580-fac4-11ea-927a-f6e6272800ea.gif)
 
 #### 1) 회원가입, 로그인, 로그아웃 
 
@@ -132,7 +132,7 @@
 >
 > 
 
-![master](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/master.gif)
+![master](https://user-images.githubusercontent.com/52882578/93667976-90e9d900-fac4-11ea-988b-03ebb4351571.gif)
 
 #### 3) 관리자 페이지
 
