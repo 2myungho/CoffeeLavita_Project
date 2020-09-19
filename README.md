@@ -2,7 +2,6 @@
 
 [![version](https://img.shields.io/badge/STS-3.9.12-yellow)](https://camo.githubusercontent.com/96464a2503ecacbff7d16fda58f75897e9a8148f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657273696f6e2d302e312e302d79656c6c6f77)[![Hits](https://img.shields.io/badge/Java-11-orange)](https://hits.seeyoufarm.com) [![mobx](https://img.shields.io/badge/Spring-5.2.8-green)](https://camo.githubusercontent.com/ef3f6f2db961cc6514516feba5c51019bd1ed71f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d6f62782d352e31352e352d626c756576696f6c6574)
 
-*Read this in English: [English](https://github.com/hyeyoon0808/React_project_6/blob/master/README_EN.md).*
 
 ## 0. 로컬 실행 방법
 
