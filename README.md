@@ -156,6 +156,7 @@
 #### 2)  반응형 모바일 홈페이지
 
 ![mobile](E:\포폴 정리\coffee\gif\mobile.gif)
-![mobile](https://github.com/2myungho/CoffeeLavita_Project/tree/master/image/mobile.gif)
+![mobile](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/mobile.gif)
+
 
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
