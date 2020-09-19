@@ -120,7 +120,7 @@
 
 
 
-![board](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/board.gif)
+![board](https://user-images.githubusercontent.com/52882578/93667900-436d6c00-fac4-11ea-8c5c-088179306786.gif)
 
 #### 2) 고객센터 게시판 기능
 
