@@ -107,7 +107,7 @@
 
 ## 5. 시나리오 & 결과 📢
 
-![login](E:\포폴 정리\coffee\gif\login.gif)
+![login](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/login.gif)
 
 #### 1) 회원가입, 로그인, 로그아웃 
 
@@ -121,7 +121,7 @@
 
 
 
-![board](E:\포폴 정리\coffee\gif\board.gif)
+![board](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/board.gif)
 
 #### 2) 고객센터 게시판 기능
 
@@ -133,7 +133,7 @@
 >
 > 
 
-![master](E:\포폴 정리\coffee\gif\master.gif)
+![master](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/master.gif)
 
 #### 3) 관리자 페이지
 
@@ -149,14 +149,11 @@
 
 #### 1) 데스크탑 홈페이지
 
-![desktop](E:\포폴 정리\coffee\gif\desktop.gif)
+![desktop](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/desktop.gif)
 
 
 
 #### 2)  반응형 모바일 홈페이지
 
-![mobile](E:\포폴 정리\coffee\gif\mobile.gif)
 ![mobile](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/mobile.gif)
 
-
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
