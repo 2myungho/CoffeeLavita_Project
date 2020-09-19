@@ -107,7 +107,7 @@
 
 ## 5. 시나리오 & 결과 📢
 
-<video src="C:\Users\SAMSUNG\SAMSUNG기본파일\Documents\Bandicam\bandicam 2020-09-19 20-28-36-843.mp4"></video>
+![login](E:\포폴 정리\coffee\gif\login.gif)
 
 #### 1) 회원가입, 로그인, 로그아웃 
 
@@ -121,7 +121,7 @@
 
 
 
-<video src="C:\Users\SAMSUNG\SAMSUNG기본파일\Documents\Bandicam\bandicam 2020-09-19 20-30-52-691.mp4"></video>
+![board](E:\포폴 정리\coffee\gif\board.gif)
 
 #### 2) 고객센터 게시판 기능
 
@@ -130,10 +130,10 @@
 > 문의내용 메뉴에서 게시물 리스트를 확인할 수 있습니다.
 >
 > 게시물의 제목 클릭시 내용을 확인할 수 있으며, 수정 및 삭제를 할 수 있습니다
+>
+> 
 
-
-
-<video src="C:\Users\SAMSUNG\SAMSUNG기본파일\Documents\Bandicam\bandicam 2020-09-19 20-34-40-380.mp4"></video>
+![master](E:\포폴 정리\coffee\gif\master.gif)
 
 #### 3) 관리자 페이지
 
@@ -149,11 +149,11 @@
 
 #### 1) 데스크탑 홈페이지
 
-<video src="C:\Users\SAMSUNG\SAMSUNG기본파일\Documents\Bandicam\bandicam 2020-09-19 20-37-02-908.mp4"></video>
+![desktop](E:\포폴 정리\coffee\gif\desktop.gif)
 
 
 
 #### 2)  반응형 모바일 홈페이지
 
-<video src="C:\Users\SAMSUNG\SAMSUNG기본파일\Documents\Bandicam\bandicam 2020-09-19 20-39-15-509 (2).mp4"></video>
+![mobile](E:\포폴 정리\coffee\gif\mobile.gif)
 
