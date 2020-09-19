@@ -148,11 +148,11 @@
 
 #### 1) 데스크탑 홈페이지
 
-![desktop](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/desktop.gif)
+![desktop2](https://user-images.githubusercontent.com/52882578/93668202-0a35fb80-fac6-11ea-99ab-3e47811d52d2.gif)
 
 
 
 #### 2)  반응형 모바일 홈페이지
 
-![mobile](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/mobile.gif)
+![mobile2](https://user-images.githubusercontent.com/52882578/93668176-ea063c80-fac5-11ea-826c-b849688c3602.gif)
 
