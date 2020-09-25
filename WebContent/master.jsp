@@ -60,6 +60,7 @@
 				</form>
 			</section>
 			<hr />
+			<button class="back"><a href="listMaster"> 관리자 게시판으로 입장하기 </a></button>
 			<button class="back"><a href="index.jsp"> 메인페이지로 돌아가기 </a></button>
 		</div>
 		

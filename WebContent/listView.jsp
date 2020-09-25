@@ -35,7 +35,7 @@
             <li>
             	<c:if test="${member == null}"><a href="" class="alert">마이페이지</a></c:if>
             	<c:if test="${member != null}"><a href="mypage.jsp">마이페이지</a></c:if>
-            <li><a href="claim.jsp">고객센터</a></li>
+            <li><a href="list">고객센터</a></li>
             <li>
                 <select class="length">
                   <option selected>KOREA</option>
@@ -192,6 +192,7 @@
         <div class = "footer1-inner">
           <ul class="side-right-inner">
            	<li><a href="claim.jsp">고객의 소리</a></li>
+			<li><a href="list">문의내용</a></li>
 			<li><a href="#">자주하는 질문</a></li>
 			<li><a href="#">제휴, 마케팅제안</a></li>
 			<li><a href="#">채용 정보</a></li>

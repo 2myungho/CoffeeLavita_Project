@@ -2,7 +2,7 @@
 
 [![version](https://img.shields.io/badge/STS-3.9.12-yellow)](https://camo.githubusercontent.com/96464a2503ecacbff7d16fda58f75897e9a8148f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657273696f6e2d302e312e302d79656c6c6f77)[![Hits](https://img.shields.io/badge/Java-11-orange)](https://hits.seeyoufarm.com) [![mobx](https://img.shields.io/badge/Spring-5.2.8-green)](https://camo.githubusercontent.com/ef3f6f2db961cc6514516feba5c51019bd1ed71f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d6f62782d352e31352e352d626c756576696f6c6574)
 
-*Read this in English: [English](https://github.com/hyeyoon0808/React_project_6/blob/master/README_EN.md).*
+
 
 ## 0. 로컬 실행 방법
 
@@ -107,7 +107,7 @@
 
 ## 5. 시나리오 & 결과 📢
 
-![login](E:\포폴 정리\coffee\gif\login.gif)
+![login](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/login.gif)
 
 #### 1) 회원가입, 로그인, 로그아웃 
 
@@ -121,7 +121,7 @@
 
 
 
-![board](E:\포폴 정리\coffee\gif\board.gif)
+![board](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/board.gif)
 
 #### 2) 고객센터 게시판 기능
 
@@ -133,7 +133,7 @@
 >
 > 
 
-![master](E:\포폴 정리\coffee\gif\master.gif)
+![master](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/master.gif)
 
 #### 3) 관리자 페이지
 
@@ -149,11 +149,15 @@
 
 #### 1) 데스크탑 홈페이지
 
-![desktop](E:\포폴 정리\coffee\gif\desktop.gif)
+![desktop](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/desktop.gif)
 
 
 
 #### 2)  반응형 모바일 홈페이지
 
-![mobile](E:\포폴 정리\coffee\gif\mobile.gif)
+![mobile](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/mobile.gif)
 
+
+
+☕ 'Coffee & Lavita'
+Spring Framework를 활용하여 제작된 카페 홈페이지입니다. 이탈리아어로 Lavita는 '풍요로운 삶'을 뜻합니다. 직장인들을 타겟으로 정했으며, coffee & lavata의 커피로 삶이 조금 더 풍요로워 졌으면 하는 마음으로 카페 홈페이지를 제작하게 되었습니다.

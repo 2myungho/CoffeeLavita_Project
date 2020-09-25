@@ -6,12 +6,12 @@
 
    <!-- 게시판 글 작성 -->
    <insert id="insert" parameterType="Board">
-	   INSERT INTO MP_BOARD(BNO , TITLE , CONTENT , WRITER  )
-	                 VALUES(MP_BOARD_SEQ.NEXTVAL , #{title}, #{content}, #{writer}  )
+	   INSERT INTO MP_BOARD(BNO , TITLE , CONTENT , WRITER, BOARD_ID)
+	                 VALUES(MP_BOARD_SEQ.NEXTVAL , #{title}, #{content}, #{writer}, #{board_id})
    </insert>
    
    <select id="list" resultType="Board">
-		SELECT BNO, TITLE, WRITER, REGDATE
+		SELECT BNO, TITLE, WRITER, REGDATE, BOARD_ID
 		  FROM MP_BOARD
 		  ORDER BY BNO DESC
 	</select>

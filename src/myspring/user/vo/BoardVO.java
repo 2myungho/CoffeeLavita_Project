@@ -9,6 +9,7 @@ public class BoardVO {
 	private String content;
 	private String writer;
 	private Date regdate;
+	private String board_id;
 	
 	public int getBno() {
 		return bno;
@@ -40,10 +41,16 @@ public class BoardVO {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
+	public String getBoard_id() {
+		return board_id;
+	}
+	public void setBoard_id(String board_id) {
+		this.board_id = board_id;
+	}
 	
 	@Override
 	public String toString() {
-		return "MemberVO [bno=" + bno + ", title=" + title + ", content=" + content + ", writer=" + writer + ", regdate=" + regdate + "]";
+		return "MemberVO [bno=" + bno + ", title=" + title + ", content=" + content + ", writer=" + writer + ", regdate=" + regdate + ", board_id=" + board_id + "]";
 	}
 	
 }

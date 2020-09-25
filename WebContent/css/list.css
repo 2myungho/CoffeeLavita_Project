@@ -31,7 +31,23 @@
 		float:left;
 		border-top:2px solid #666;
     }
-    #root h1{line-height: 60px;}
+    header{
+        display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    }
+    #root h1{line-height: 60px; display:inline-block;}
+    .writeBtn{
+    	display:inline-block;
+    	width:100px;
+    	height:30px;
+    	background:#ede7d8;
+    }
+    .writeBtn>a{
+   		width: 100%;
+    	display: block;
+    	height: 100%;
+    }
     .tableHead{height:40px;}
     table{width:100%; text-align: center;}
 	.bottom-line{border-bottom: 1px solid #444;}

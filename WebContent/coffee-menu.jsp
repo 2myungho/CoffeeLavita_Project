@@ -34,7 +34,7 @@
             <li>
             	<c:if test="${member == null}"><a href="" class="alert">마이페이지</a></c:if>
             	<c:if test="${member != null}"><a href="mypage.jsp">마이페이지</a></c:if>
-            <li><a href="claim.jsp">고객센터</a></li>
+            <li><a href="list">고객센터</a></li>
             <li>
                 <select class="length">
                   <option selected>KOREA</option>

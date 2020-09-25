@@ -31,6 +31,13 @@ public class BoardController {
 		return "list";
 	}
 	
+	@RequestMapping(value = "/listMaster", method = RequestMethod.GET)
+	public String listMaster(Model model) {
+		System.out.println("게시물 목록입니당. : " + model);
+		model.addAttribute("list",service.list());
+		return "listMaster";
+	}
+	
 	//게시판 조회
 	@RequestMapping(value="/listView", method = RequestMethod.GET)
 	public String read(BoardVO vo, Model model) {

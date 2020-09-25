@@ -44,7 +44,6 @@
             <li>
             	<c:if test="${member == null}"><a href="" class="alert">마이페이지</a></c:if>
             	<c:if test="${member != null}"><a href="mypage.jsp">마이페이지</a></c:if>
-            </li>
             <li><a href="list">고객센터</a></li>
             <li>
                 <select class="length">
@@ -130,7 +129,7 @@
       <div id = "content">
 	  		<div class="content-claim">
 				<div class="background-top">
-					<h2>문의 내용</h2>
+					<h2>관리자 게시판</h2>
 				</div>
 				<div class="claim-bottom">
 					<div class="location"><a href="main.html">메인></a><a href="claim.html">문의내용</a></div>
@@ -138,13 +137,12 @@
 						<div id="root">
 							<header>
 								<h1>문의 내용 게시판</h1>
-			            			<c:if test="${member == null}"><button class="writeBtn"><a href="" class="alert">글 쓰기</a></button></c:if>
-			            			<c:if test="${member != null}"><button class="writeBtn"><a href="claim.jsp">글 쓰기</a></button></c:if>
+								<button class="writeBtn"><a href="claim.jsp">글 쓰기</a></button>
 							</header>
 							<hr />
 						
 							<section id="container">
-								<form role="form" method="post" action="list">
+								<form role="form" method="post" action="listMaster">
 									<table>
 										<colgroup>
 											<col style="width: 15%;">
@@ -158,20 +156,7 @@
 											<tr class="bottom-line">
 												<td><c:out value="${list.bno}" /></td>
 												<td class="left">
-												
-													<c:if test="${member != null}">
-														<c:if test="${member.mem_id == list.board_id}">
-															<a href="listView?bno=${list.bno}"><c:out value="${list.title}" /></a>
-														</c:if>
-														<c:if test="${member.mem_id != list.board_id}">
-															<c:out value="${list.title}" /></a>
-														</c:if>
-													</c:if>
-													
-													<c:if test="${member == null}">
-														<c:out value="${list.title}" /></a>
-													</c:if>
-													
+													<a href="listView?bno=${list.bno}"><c:out value="${list.title}" /></a>
 												</td>
 												<td class="left"><c:out value="${list.writer}" /></td>
 												<td><fmt:formatDate value="${list.regdate}" pattern="yyyy-MM-dd"/></td>											
@@ -187,10 +172,7 @@
 
 					<div class="side-right">
 						<ul class="side-right-inner">
-							<li>
-			            		<c:if test="${member == null}"><a href="" class="alert">고객의 소리</a></c:if>
-			            		<c:if test="${member != null}"><a href="claim.jsp">고객의 소리</a></c:if>
-			            	</li>
+							<li><a href="claim.jsp">고객의 소리</a></li>
 							<li><a href="list">문의내용</a></li>
 							<li><a href="#">자주하는 질문</a></li>
 							<li><a href="#">제휴, 마케팅제안</a></li>
