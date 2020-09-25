@@ -1,7 +1,6 @@
 # ☕️ Coffee & Lavita
 
-[![version](https://img.shields.io/badge/STS-3.9.12-yellow)](https://camo.githubusercontent.com/96464a2503ecacbff7d16fda58f75897e9a8148f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657273696f6e2d302e312e302d79656c6c6f77)[![Hits](https://img.shields.io/badge/Java-11-orange)](https://hits.seeyoufarm.com) [![mobx](https://img.shields.io/badge/Spring-5.2.8-green)](https://camo.githubusercontent.com/ef3f6f2db961cc6514516feba5c51019bd1ed71f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d6f62782d352e31352e352d626c756576696f6c6574)
-
+[![version](https://img.shields.io/badge/STS-3.9.12-yellow)](https://camo.githubusercontent.com/96464a2503ecacbff7d16fda58f75897e9a8148f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657273696f6e2d302e312e302d79656c6c6f77) [![Hits](https://img.shields.io/badge/Java-11-orange)](https://hits.seeyoufarm.com) [![mobx](https://img.shields.io/badge/Spring-5.2.8-green)](https://camo.githubusercontent.com/ef3f6f2db961cc6514516feba5c51019bd1ed71f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d6f62782d352e31352e352d626c756576696f6c6574)
 
 
 ## 0. 로컬 실행 방법
@@ -14,7 +13,7 @@
 
 ### Coffee & Lavita 
 
-* 이탈리아어로 Lavita는 '풍요로운 삶'을 뜻합니다. 직장인들을 타겟으로 지정했으며, coffee & lavata의 커피로 삶이 조금 더 풍요로워 졌으면 하는 마음으로 카페 홈페이지를 제작하게 되었습니다.  여러 프렌차이즈 카페들을 참조하여 제작하였습니다. 💬   
+* 이탈리아어로 Lavita는 '풍요로운 삶'을 뜻합니다. 직장인들을 타겟으로 지정했으며, coffee & lavita의 커피로 삶이 조금 더 풍요로워 졌으면 하는 마음으로 카페 홈페이지를 제작하게 되었습니다.  여러 프렌차이즈 카페들을 참조하여 제작하였습니다. 💬   
 
 #### 기획 단계 및 Client 제작과정 주소
 
@@ -62,6 +61,8 @@
 - 1차 진행 기간 : 2019. 12 - 2020. 1
   * Html, CSS, Javascript, JQuery 를 이용하여 홈페이지 폼 제작
 - 2차 진행 기간 : 2020. 09. 07 - 2020. 09. 18
+  * Spring Framework, Jsp, Oracle,을 이용하여 기능 구현
+  
 - 목표 : SpringFramework와 Oracle을 활용하여 작년에 만들어둔 홈페이지에 기능을 추가해보자!
 
 ## 3. 개인프로젝트 제작 순서
@@ -107,7 +108,7 @@
 
 ## 5. 시나리오 & 결과 📢
 
-![login](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/login.gif)
+![login](https://user-images.githubusercontent.com/52882578/93667960-7c0d4580-fac4-11ea-927a-f6e6272800ea.gif)
 
 #### 1) 회원가입, 로그인, 로그아웃 
 
@@ -121,7 +122,7 @@
 
 
 
-![board](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/board.gif)
+![board](https://user-images.githubusercontent.com/52882578/93667900-436d6c00-fac4-11ea-8c5c-088179306786.gif)
 
 #### 2) 고객센터 게시판 기능
 
@@ -133,7 +134,7 @@
 >
 > 
 
-![master](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/master.gif)
+![master](https://user-images.githubusercontent.com/52882578/93667976-90e9d900-fac4-11ea-988b-03ebb4351571.gif)
 
 #### 3) 관리자 페이지
 
@@ -149,15 +150,10 @@
 
 #### 1) 데스크탑 홈페이지
 
-![desktop](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/desktop.gif)
+![desktop2](https://user-images.githubusercontent.com/52882578/93668202-0a35fb80-fac6-11ea-99ab-3e47811d52d2.gif)
 
 
 
 #### 2)  반응형 모바일 홈페이지
 
-![mobile](https://github.com/2myungho/CoffeeLavita_Project/blob/master/image/mobile.gif)
-
-
-
-☕ 'Coffee & Lavita'
-Spring Framework를 활용하여 제작된 카페 홈페이지입니다. 이탈리아어로 Lavita는 '풍요로운 삶'을 뜻합니다. 직장인들을 타겟으로 정했으며, coffee & lavata의 커피로 삶이 조금 더 풍요로워 졌으면 하는 마음으로 카페 홈페이지를 제작하게 되었습니다.
+![mobile2](https://user-images.githubusercontent.com/52882578/93668176-ea063c80-fac5-11ea-826c-b849688c3602.gif)
