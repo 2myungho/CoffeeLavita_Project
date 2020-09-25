@@ -30,12 +30,19 @@ public class BoardController {
 		model.addAttribute("list",service.list());
 		return "list";
 	}
-	
+	//관리자 게시판 목록 조회
 	@RequestMapping(value = "/listMaster", method = RequestMethod.GET)
 	public String listMaster(Model model) {
 		System.out.println("게시물 목록입니당. : " + model);
 		model.addAttribute("list",service.list());
 		return "listMaster";
+	}
+	
+	@RequestMapping(value = "/mylist", method = RequestMethod.GET)
+	public String mylist(Model model) {
+		System.out.println("게시물 목록입니당. : " + model);
+		model.addAttribute("list",service.list());
+		return "mylist";
 	}
 	
 	//게시판 조회

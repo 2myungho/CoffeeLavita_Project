@@ -190,13 +190,12 @@
         
       <div id = "footer1">
         <div class = "footer1-inner">
-          <ul class="side-right-inner">
-           	<li><a href="claim.jsp">고객의 소리</a></li>
-			<li><a href="list">문의내용</a></li>
-			<li><a href="#">자주하는 질문</a></li>
-			<li><a href="#">제휴, 마케팅제안</a></li>
-			<li><a href="#">채용 정보</a></li>
-		</ul>
+          <ul>
+            <li><a href="#">개인정보 처리 방침</a></li>
+            <li><a href="#">영상정보처리기기운영관리방침</a></li>
+            <li><a href="#">홈페이지 이용약관</a></li>
+            <li><a href="#">윤리경영</a></li>
+          </ul>
       </div>
       </div>
 

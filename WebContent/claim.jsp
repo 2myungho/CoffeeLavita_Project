@@ -120,7 +120,7 @@
 							만족스러웠던 점이나 불편하셨던 점이 있으시다면 귀한 의견 들려주시기 바랍니다.<br> 항상 보다 나은
 							서비스로 보답하겠습니다.
 						</p>
-						<a href="#">나의 문의 내역</a>
+						<a href="mylist">나의 문의 내역</a>
 					</div>
 					<form role="form" method="post" action="write">
 						<div class="claim-left-secondbox">

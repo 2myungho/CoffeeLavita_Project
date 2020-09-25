@@ -31,6 +31,32 @@
 		float:left;
 		border-top:2px solid #666;
     }
+    .claim-left-fristbox{
+		width:840px;
+		height:140px;
+		border:1px solid #ede7d8;
+		background:#ede7d8;
+		padding:30px 20px 30px 20px;
+	}
+	.claim-left-fristbox>h3{font-size:18px; font-weight:bold; margin-bottom:20px;}
+	.claim-left-fristbox>p{font-size:15px; margin-bottom:16px;}
+	.claim-left-fristbox>a{
+		width:180px;
+		height:40px;
+		background:#f4f4f2;
+		text-align:center;
+		line-height:40px;
+		display:block;
+		margin:0 auto;
+		font-weight:bold;
+	}
+	.claim-left-fristbox>a:hover{background:#c9bf9e;}
+	.claim-left-secondbox{
+		width:880px;
+		height:550px;
+		margin:50px 0 30px;
+		border-top:1px solid #000000;
+	}
     header{
         display: flex;
     	align-items: center;
@@ -88,7 +114,48 @@
 	.claim-left{
 		width:100%;
 	}
-    #root h1{line-height: 50px;}
+	.claim-left-fristbox{
+		width:100%;
+		overflow: hidden;
+		border:1px solid #ede7d8;
+		background:#ede7d8;
+		padding:30px 20px 26px 20px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+	}
+	.claim-left-fristbox>h3{font-size:18px; font-weight:bold; margin-bottom:20px;}
+	.claim-left-fristbox>p{font-size:15px; margin-bottom:20px;}
+	.claim-left-fristbox>a{
+		width:26.2%;
+		height:40px;
+		background:#f2f2f2;
+		text-align:center;
+		line-height:40px;
+		display:block;
+		margin:0 auto;
+		font-weight:bold;
+	}
+	.claim-left-fristbox>a:hover{background:#c9bf9e;}
+    #root h1{line-height: 50px; display:inline-block;}
+     header{
+        display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    }
+    .writeBtn{
+    	display:inline-block;
+    	width:100px;
+    	height:30px;
+    	background:#ede7d8;
+    }
+    .writeBtn>a{
+   		width: 100%;
+    	display: block;
+    	height: 100%;
+    }
     .tableHead{height:40px;}
     table{width:100%; text-align: center;}
 	.bottom-line{border-bottom: 1px solid #444;}
@@ -127,7 +194,49 @@
 	.claim-left{
 		width:100%;
 	}
-    #root h1{line-height: 40px; font-size:20px;}
+	.claim-left-fristbox{
+		width:100%;
+		overflow: hidden;
+		border:1px solid #ede7d8;
+		background:#ede7d8;
+		padding:10px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+	}
+	.claim-left-fristbox>h3{font-size:14px; font-weight:bold; margin-bottom:10px;}
+	.claim-left-fristbox>p{font-size:12px; margin-bottom:10px;}
+	.claim-left-fristbox>a{
+		width:26.2%;
+		height:30px;
+		line-height:30px;
+		background:#f2f2f2;
+		text-align:center;
+		display:block;
+		margin:0 auto;
+		font-weight:bold;
+		font-size:10px;
+	}
+	.claim-left-fristbox>a:hover{background:#c9bf9e;}
+     header{
+        display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    }
+    .writeBtn{
+    	display:inline-block;
+    	width:100px;
+    	height:30px;
+    	background:#ede7d8;
+    }
+    .writeBtn>a{
+   		width: 100%;
+    	display: block;
+    	height: 100%;
+    }
+    #root h1{line-height: 40px; font-size:20px; display:inline-block;}
     .tableHead{height:30px;}
     table{width:100%; text-align: center;}
 	.bottom-line{border-bottom: 1px solid #444;}
