@@ -144,12 +144,8 @@
 									</tbody>
 								</table>
 								<div class="btnBox">
-									<c:if test="${member != null}">
-										<c:if test="${member.mem_id == read.board_id}">
-											<button type="submit" class="update_btn">수정</button>
-											<button type="submit" class="delete_btn">삭제</button>
-										</c:if>
-									</c:if>
+									<button type="submit" class="update_btn">수정</button>
+									<button type="submit" class="delete_btn">삭제</button>
 								</div>
 							</form>
 						</section>

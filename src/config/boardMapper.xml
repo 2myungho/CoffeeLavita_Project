@@ -17,7 +17,7 @@
 	</select>
 	<!--게시물 조회 -->
 	<select id="read" resultType="Board">
-		SELECT BNO, TITLE, CONTENT, WRITER,REGDATE
+		SELECT BNO, TITLE, CONTENT, WRITER, REGDATE, BOARD_ID
 			FROM MP_BOARD
 			WHERE BNO = #{bno}
 	</select>

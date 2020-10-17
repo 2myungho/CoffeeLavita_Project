@@ -166,8 +166,8 @@
 											<tr class="bottom-line">
 												<td><c:out value="${list.bno}" /></td>
 												<td class="left">
-												
-													<c:if test="${member != null}">
+													<a href="listView?bno=${list.bno}"><c:out value="${list.title}" /></a>
+													<%-- <c:if test="${member != null}">
 														<c:if test="${member.mem_id == list.board_id}">
 															<a href="listView?bno=${list.bno}"><c:out value="${list.title}" /></a>
 														</c:if>
@@ -178,7 +178,7 @@
 													
 													<c:if test="${member == null}">
 														<c:out value="${list.title}" /></a>
-													</c:if>
+													</c:if> --%>
 													
 												</td>
 												<td class="left"><c:out value="${list.writer}" /></td>

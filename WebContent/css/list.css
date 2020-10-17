@@ -67,12 +67,12 @@
     	display:inline-block;
     	width:100px;
     	height:30px;
-    	background:#ede7d8;
+    	border:none;
     }
     .writeBtn>a{
    		width: 100%;
     	display: block;
-    	height: 100%;
+    	line-height:30px;
     }
     .tableHead{height:40px;}
     table{width:100%; text-align: center;}
@@ -149,12 +149,12 @@
     	display:inline-block;
     	width:100px;
     	height:30px;
-    	background:#ede7d8;
+    	border:none;
     }
     .writeBtn>a{
    		width: 100%;
     	display: block;
-    	height: 100%;
+    	line-height:30px;
     }
     .tableHead{height:40px;}
     table{width:100%; text-align: center;}
@@ -229,12 +229,12 @@
     	display:inline-block;
     	width:100px;
     	height:30px;
-    	background:#ede7d8;
+    	border:none;
     }
     .writeBtn>a{
    		width: 100%;
     	display: block;
-    	height: 100%;
+    	line-height:30px;
     }
     #root h1{line-height: 40px; font-size:20px; display:inline-block;}
     .tableHead{height:30px;}

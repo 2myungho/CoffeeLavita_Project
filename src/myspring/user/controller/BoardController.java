@@ -37,7 +37,7 @@ public class BoardController {
 		model.addAttribute("list",service.list());
 		return "listMaster";
 	}
-	
+	//나의 게시물 목록 조회
 	@RequestMapping(value = "/mylist", method = RequestMethod.GET)
 	public String mylist(Model model) {
 		System.out.println("게시물 목록입니당. : " + model);
@@ -52,6 +52,13 @@ public class BoardController {
 		model.addAttribute("read", service.read(vo.getBno()));
 		return "listView";
 	}
+	//마스터 게시판 뷰 조회
+		@RequestMapping(value="/masterlistView", method = RequestMethod.GET)
+		public String masterRead(BoardVO vo, Model model) {
+			System.out.println("게시물 목록입니당 : "+ vo);
+			model.addAttribute("read", service.read(vo.getBno()));
+			return "masterlistView";
+		}
 	//게시판 수정뷰
 	@RequestMapping(value = "/updateViewlist", method= {RequestMethod.GET, RequestMethod.POST})
 	public String updateView(BoardVO vo, Model model) {

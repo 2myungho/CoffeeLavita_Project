@@ -156,7 +156,7 @@
 											<tr class="bottom-line">
 												<td><c:out value="${list.bno}" /></td>
 												<td class="left">
-													<a href="listView?bno=${list.bno}"><c:out value="${list.title}" /></a>
+													<a href="masterlistView?bno=${list.bno}"><c:out value="${list.title}" /></a>
 												</td>
 												<td class="left"><c:out value="${list.writer}" /></td>
 												<td><fmt:formatDate value="${list.regdate}" pattern="yyyy-MM-dd"/></td>											
