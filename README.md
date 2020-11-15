@@ -3,9 +3,12 @@
 [![version](https://img.shields.io/badge/STS-3.9.12-yellow)](https://camo.githubusercontent.com/96464a2503ecacbff7d16fda58f75897e9a8148f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657273696f6e2d302e312e302d79656c6c6f77) [![Hits](https://img.shields.io/badge/Java-11-orange)](https://hits.seeyoufarm.com) [![mobx](https://img.shields.io/badge/Spring-5.2.8-green)](https://camo.githubusercontent.com/ef3f6f2db961cc6514516feba5c51019bd1ed71f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d6f62782d352e31352e352d626c756576696f6c6574)
 
 
-## 0. 로컬 실행 방법
+## 0. 실행 방법
 
 * 웹 서버를 실행하기 위해 Apache Tomcat 8.5v 를 사용했습니다.
+* AWS EC2 서버를 활용하여 배포했습니다.
+  * http://ec2-15-16........ap-northeast-2.compute.amazonaws.com:8080/Lavita/ 
+  * (퍼블릭 ip 비공개)
 
 
 
@@ -40,6 +43,10 @@
 * Oracle
 * mybatis
 
+**클라우드**
+
+* AWS EC2
+
 **마크업**
 
 *  Html
@@ -62,8 +69,11 @@
   * Html, CSS, Javascript, JQuery 를 이용하여 홈페이지 폼 제작
 - 2차 진행 기간 : 2020. 09. 07 - 2020. 09. 18
   * Spring Framework, Jsp, Oracle,을 이용하여 기능 구현
-  
-- 목표 : SpringFramework와 Oracle을 활용하여 작년에 만들어둔 홈페이지에 기능을 추가해보자!
+  * 목표 : SpringFramework와 Oracle을 활용하여 작년에 만들어둔 홈페이지에 기능을 추가해보자!
+- 3차 진행 기간 : 2020. 11. 16 ~
+  - **AWS EC2서버를 활용해 프로젝트 배포하기**
+  - 추후에 Docker를 사용하여 배포하는 것도 고려하고 있음
+  - AWS RDS에서 Oracle은 프리티어가 적용 되지 않기 때문에 프로젝트에 DB를 Mysql이나 MariaDB로 연동해야 할 것 같다.
 
 ## 3. 개인프로젝트 제작 순서
 
@@ -80,6 +90,11 @@
 2. Oracle DB로 회원정보, 게시판 테이블 생성
 3. VO, Controller, Service, Dao, config 패키지 및 파일 생성
 4. html을 jsp 확장자로 변경후 구현부분 수정
+
+* **3차 제작 (AWS)**
+
+1. AWS EC2를 활용해서 프로젝트 배포해보기 
+2. AWS RDS를 활용해서 DB 배포예정  (DB를 교체해야함)
 
 
 
