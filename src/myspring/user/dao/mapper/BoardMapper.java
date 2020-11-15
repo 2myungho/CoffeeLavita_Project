@@ -8,14 +8,14 @@ import myspring.user.vo.BoardVO;
 
 @Mapper
 public interface BoardMapper {
-	//µî·Ï
+	//ï¿½ï¿½ï¿½
 	void insert(BoardVO vo);
-	//¸ñ·Ï
+	//ï¿½ï¿½ï¿½
 	List<BoardVO> list();
-	//»ó¼¼¸ñ·Ï
+	//ï¿½ó¼¼¸ï¿½ï¿½
 	BoardVO read(int bno);
-	//¼öÁ¤
+	//ï¿½ï¿½ï¿½ï¿½
 	void update(BoardVO vo);
-	//»èÁ¦
+	//ï¿½ï¿½ï¿½ï¿½
 	void delete(int id);
 }
