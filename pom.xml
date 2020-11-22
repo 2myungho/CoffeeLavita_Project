@@ -75,6 +75,11 @@
 			<artifactId>mybatis-spring</artifactId>
 			<version>2.0.5</version>
 		</dependency>
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.2.5</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
@@ -95,15 +100,15 @@
 		</dependency>
 		<!-- encoding때문에 추가한 것 -->
 		<dependency>
-		    <groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-databind</artifactId>
-		    <version>2.9.3</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.3</version>
 		</dependency>
 
 		<dependency>
-		    <groupId>org.codehaus.jackson</groupId>
-		    <artifactId>jackson-mapper-asl</artifactId>
-		    <version>1.9.13</version>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
 		</dependency>
 	</dependencies>
 </project>
