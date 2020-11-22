@@ -42,10 +42,12 @@
 
 * Oracle
 * mybatis
+* MariaDB
 
 **클라우드**
 
 * AWS EC2
+* AWS RDS
 
 **마크업**
 
@@ -72,8 +74,9 @@
   * 목표 : SpringFramework와 Oracle을 활용하여 작년에 만들어둔 홈페이지에 기능을 추가해보자!
 - 3차 진행 기간 : 2020. 11. 16 ~
   - **AWS EC2서버를 활용해 프로젝트 배포하기**
-  - 추후에 Docker를 사용하여 배포하는 것도 고려하고 있음
-  - AWS RDS에서 Oracle은 프리티어가 적용 되지 않기 때문에 프로젝트에 DB를 Mysql이나 MariaDB로 연동해야 할 것 같다.
+  - AWS RDS를 EC2 서버에서 연동
+  - RDS에서 Oracla이 유료이기 때문에 MariaDB로 변경
+  - 추후 도커와 쿠버네티스까지 해볼 생각
 
 ## 3. 개인프로젝트 제작 순서
 
@@ -94,7 +97,7 @@
 * **3차 제작 (AWS)**
 
 1. AWS EC2를 활용해서 프로젝트 배포해보기 
-2. AWS RDS를 활용해서 DB 배포예정  (DB를 교체해야함)
+2. AWS RDS를 활용해서 EC2에 MariaDB 연동
 
 
 
