@@ -7,7 +7,7 @@
 
 * 웹 서버를 실행하기 위해 Apache Tomcat 8.5v 를 사용했습니다.
 * **AWS EC2** 서버를 활용하여 배포했습니다.
-  * http://ec2-15-165-156-8.ap-northeast-2.compute.amazonaws.com.com:8080/Lavita/ 
+  * http://ec2-15-165-156-8.ap-northeast-2.compute.amazonaws.com:8080/Lavita/ 
 
 
 
